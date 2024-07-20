@@ -7,4 +7,11 @@ body{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    display: grid;
+}
+
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
 }
