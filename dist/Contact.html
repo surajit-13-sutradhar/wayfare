@@ -5,6 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
     <link rel="stylesheet" href="output.css">
+    <style>
+
+        #contactForm {
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+        #image {
+            width: 100%;
+            height: 100%;
+            background-image: url('https://images.pexels.com/photos/1090638/pexels-photo-1090638.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+            background-size: cover;
+            background-position: center; 
+            background-repeat: no-repeat;
+        }
+        
+        #form{
+          position: absolute;
+          z-index: 100;
+          width: 400px;
+          height: 400px;
+          background-color: aliceblue;
+          left: 50%;
+          bottom: 20%;
+        }
+
+        #contactForm h1{
+          position: absolute;
+        }
+
+    </style>
 </head>
 <body>
     <main>
@@ -21,31 +55,17 @@
                 </nav>
                 <div id="contact" class="py-2 px-4 bg-slate-800 rounded-full text-white text-md cursor-pointer"><a href="Contact.html">Contact Us</a></div>
             </header>
-            <div id="form" class="w-full h-[600px] mt-[10%] bg-slate-500 flex justify-center items-center flex-col">
-                <form action="submit" method="get" class="">
-                    <div class="flex flex-col">
-                      <label for="name">Enter your name: </label>
-                      <input type="text" name="name" id="name" required />
-                    </div>
-                    <div class="flex flex-col">
-                      <label for="email">Enter your email: </label>
-                      <input type="email" name="email" id="email" required />
-                    </div>
-                    <div class="flex flex-col">
-                      <label for="email">Enter your email: </label>
-                      <input type="email" name="email" id="email" required />
-                    </div>
-                    <div class="flex flex-col">
-                      <label for="email">Enter your email: </label>
-                      <input type="email" name="email" id="email" required />
-                    </div>
-                    <div class="flex flex-col">
-                      <input type="submit" value="Subscribe!" />
-                    </div>
-                  </form>
-            </div>
             
+            <div id="contactForm">
+              <div id="image"></div>
+              <div id="form"></div>
+              
+              
+            </div>  
 
+            <div id="footer" class="w-full h-[400px] px-0 mx-0 bg-white">
+                
+            </div>
         </section>
     </main>
     
